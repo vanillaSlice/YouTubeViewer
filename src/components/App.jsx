@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 
 import Header from './Header';
-import VideoDetails from './VideoDetails';
-import VideoList from './VideoList';
+// import VideoDetails from './VideoDetails';
+// import VideoList from './VideoList';
 
 import './App.css';
 
