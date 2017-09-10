@@ -1,0 +1,19 @@
+html {
+  background-color: #fafafa;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #111;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

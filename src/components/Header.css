@@ -1,0 +1,110 @@
+.Header {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 0.01rem 0.5rem #ddd;
+}
+
+.Header .visible-sm {
+  display: inherit !important;
+}
+
+.Header .hidden-sm {
+  display: none !important;
+}
+
+.Header .content {
+  max-width: 75rem;
+  padding: 0 1rem;
+  height: 4rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.Header .brand {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-right: 5rem;
+}
+
+.Header .brand a {
+  display: flex;
+  align-items: center;
+  color: #282828;
+  text-decoration: none;
+}
+
+.Header .logo {
+  font-size: 1.6rem;
+  color: #f00;
+  margin-right: 0.2rem;
+}
+
+.Header button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #828282;
+}
+
+.Header button:hover,
+.Header button:focus {
+  color: #333;
+}
+
+.Header .icon-button {
+  background-color: transparent;
+  font-size: 1.6rem;
+}
+
+.Header .submit-button {
+  border-left: 0.0625rem solid #ddd;
+  background-color: #f8f8f8;
+  width: 4.6875rem;
+}
+
+.Header .submit-button:hover,
+.Header .submit-button:focus {
+  background-color: #f0f0f0;
+}
+
+.Header .search-form {
+  width: 100%;
+  display: flex;
+  border-radius: 0.125rem;
+  border: 0.0625rem solid #ddd;
+}
+
+.Header .search-form input {
+  width: 100%;
+  font-family: inherit;
+  font-weight: normal;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  color: inherit;
+}
+
+.Header .back-button {
+  margin-right: 1rem;
+}
+
+.Header .search-button {
+  margin-left: auto;
+}
+
+@media (min-width: 62em) {
+  .Header .visible-md {
+    display: inherit !important;
+  }
+
+  .Header .hidden-md {
+    display: none !important;
+  }
+
+  .Header form,
+  .Header input {
+    max-width: 37.5rem;
+    width: 37.5rem;
+  }
+}
