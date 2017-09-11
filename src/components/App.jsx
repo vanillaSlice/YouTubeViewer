@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 
 import Header from './Header';
-// import VideoDetails from './VideoDetails';
-// import VideoList from './VideoList';
+import VideoDetails from './VideoDetails';
+import VideoList from './VideoList';
 
 import './App.css';
 
@@ -14,10 +14,9 @@ class App extends Component {
     super(props);
 
     this.state = { videos: [] };
-  }
 
-  componentDidMount() {
-    this.handleSearch('poop');
+    this.handleSearch = this.handleSearch.bind(this);
+    this.handleVideoSelect = this.handleVideoSelect.bind(this);
   }
 
   handleSearch(term) {
@@ -26,14 +25,21 @@ class App extends Component {
         videos,
         selectedVideo: videos[0],
       });
-      console.log(this.state);
     });
+  }
+
+  handleVideoSelect(selectedVideo) {
+    this.setState({ selectedVideo });
   }
 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header onSearch={this.handleSearch} />
+        <main className="container">
+          {this.state.selectedVideo && <VideoDetails video={this.state.selectedVideo} />}
+          <VideoList videos={this.state.videos} onVideoSelect={this.handleVideoSelect} />
+        </main>
       </div>
     );
   }
