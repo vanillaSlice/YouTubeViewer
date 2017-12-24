@@ -63,7 +63,7 @@ class Header extends Component {
               onChange={this.handleTermChange}
             />
             <button
-              className={'submit-button'}
+              className="submit-button"
               type="submit"
             >
               <FontAwesome name="search" tag="i" />

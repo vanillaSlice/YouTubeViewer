@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "enzyme": "^2.9.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.1.0",
     "normalize.css": "^7.0.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-fontawesome": "^1.6.1",
-    "react-scripts": "1.0.13",
-    "react-test-renderer": "^15.6.1",
-    "youtube-api-search": "0.0.5"
+    "react-scripts": "^1.0.17",
+    "react-test-renderer": "^16.2.0",
+    "youtube-api-search": "^0.0.5"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -27,13 +28,13 @@
   },
   "homepage": "https://vanillaslice.github.io/YouTubeViewer/",
   "devDependencies": {
-    "eslint": "^4.6.1",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.3.0",
-    "npm-run-all": "^4.1.1",
-    "stylelint": "^8.1.1",
-    "stylelint-config-standard": "^17.0.0"
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "npm-run-all": "^4.1.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0"
   }
 }
