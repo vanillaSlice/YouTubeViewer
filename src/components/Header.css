@@ -1,109 +1,110 @@
-.Header {
+.header {
   background-color: #fff;
-  width: 100%;
   box-shadow: 0 0.01rem 0.5rem #ddd;
+  width: 100%;
 }
 
-.Header .visible-sm {
-  display: inherit !important;
+.header .visible-sm {
+  display: initial !important;
 }
 
-.Header .hidden-sm {
+.header .hidden-sm {
   display: none !important;
 }
 
-.Header .content {
-  max-width: 75rem;
-  padding: 0 1rem;
+.header .content {
+  align-items: center;
+  display: flex;
   height: 4rem;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+  max-width: 75rem;
+  padding: 0 1rem;
 }
 
-.Header .brand {
+.header .brand {
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
   margin: 0;
   margin-right: 5rem;
 }
 
-.Header .brand a {
-  display: flex;
+.header .brand a {
   align-items: center;
   color: #282828;
+  display: flex;
   text-decoration: none;
 }
 
-.Header .logo {
-  font-size: 1.6rem;
+.header .logo {
   color: #f00;
+  font-size: 1.6rem;
   margin-right: 0.2rem;
 }
 
-.Header button {
+.header button {
   border: none;
+  color: #828282;
   cursor: pointer;
   outline: none;
-  color: #828282;
 }
 
-.Header button:hover,
-.Header button:focus {
+.header button:focus,
+.header button:hover {
   color: #333;
 }
 
-.Header .icon-button {
+.header .icon-button {
   background-color: transparent;
   font-size: 1.6rem;
 }
 
-.Header .submit-button {
-  border-left: 0.0625rem solid #ddd;
+.header .submit-button {
   background-color: #f8f8f8;
+  border-left: 0.0625rem solid #ddd;
+  border-radius: 0;
   width: 4.6875rem;
 }
 
-.Header .submit-button:hover,
-.Header .submit-button:focus {
+.header .submit-button:focus,
+.header .submit-button:hover {
   background-color: #f0f0f0;
 }
 
-.Header .search-form {
-  width: 100%;
-  display: flex;
-  border-radius: 0.125rem;
+.header .search-form {
   border: 0.0625rem solid #ddd;
+  border-radius: 0.125rem;
+  display: flex;
+  width: 100%;
 }
 
-.Header .search-form input {
-  width: 100%;
+.header .search-form input {
+  border: none;
+  color: inherit;
   font-family: inherit;
   font-weight: normal;
   padding: 0.4rem 0.7rem;
-  border: none;
-  color: inherit;
+  width: 100%;
 }
 
-.Header .back-button {
+.header .back-button {
   margin-right: 1rem;
 }
 
-.Header .search-button {
+.header .search-button {
   margin-left: auto;
 }
 
 @media (min-width: 62em) {
-  .Header .visible-md {
+  .header .visible-md {
     display: inherit !important;
   }
 
-  .Header .hidden-md {
+  .header .hidden-md {
     display: none !important;
   }
 
-  .Header form,
-  .Header input {
+  .header form,
+  .header input {
     max-width: 37.5rem;
     width: 37.5rem;
   }

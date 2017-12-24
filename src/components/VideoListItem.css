@@ -1,30 +1,30 @@
-.VideoListItem {
-  margin-top: 1rem;
-  display: flex;
+.video-list-item {
   align-items: center;
   cursor: pointer;
+  display: flex;
+  margin-top: 1rem;
 }
 
-.VideoListItem:first-child {
+.video-list-item:first-child {
   margin-top: 0;
 }
 
-.VideoListItem img {
+.video-list-item img {
+  align-self: flex-start;
   margin-right: 0.5rem;
+}
+
+.video-list-item .video-info {
   align-self: flex-start;
 }
 
-.VideoListItem .video-info {
-  align-self: flex-start;
-}
-
-.VideoListItem .title {
+.video-list-item .title {
   font-size: 0.875rem;
   margin: 0;
 }
 
-.VideoListItem .channel {
-  font-size: 0.8125rem;
+.video-list-item .channel {
   color: #707070;
+  font-size: 0.8125rem;
   margin: 0.5rem 0;
 }

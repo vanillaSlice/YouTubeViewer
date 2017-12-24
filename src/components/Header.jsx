@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome from 'react-fontawesome';
-import PropTypes from '../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import './Header.css';
 
@@ -35,7 +35,7 @@ class Header extends Component {
 
   render() {
     return (
-      <header className="Header">
+      <header className="header">
         <div className="content">
           <h1 className={`brand visible-md ${this.state.displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}>
             <a href="." title="YouTube Viewer">

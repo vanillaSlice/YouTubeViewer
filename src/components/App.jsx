@@ -34,12 +34,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header onSearch={this.handleSearch} />
-        <main className="container">
+        <div className="container">
           {this.state.selectedVideo && <VideoDetails video={this.state.selectedVideo} />}
           <VideoList videos={this.state.videos} onVideoSelect={this.handleVideoSelect} />
-        </main>
+        </div>
       </div>
     );
   }

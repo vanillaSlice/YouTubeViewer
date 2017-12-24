@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from '../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import './VideoDetails.css';
 
@@ -13,7 +13,7 @@ const formatDate = str => new Date(str).toLocaleDateString('en-UK', DATE_OPTIONS
 
 const VideoDetails = ({ video }) =>
   (
-    <div className="VideoDetails">
+    <div className="video-details">
       <div className="iframe-wrapper">
         <iframe
           type="text/html"

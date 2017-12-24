@@ -5,13 +5,13 @@
 */
 
 import React from 'react';
-import PropTypes from '../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import './VideoListItem.css';
 
 const VideoListItem = ({ video, onVideoSelect }) =>
   (
-    <li className="VideoListItem" onClick={() => onVideoSelect(video)}>
+    <li className="video-list-item" onClick={() => onVideoSelect(video)}>
       <img
         src={video.snippet.thumbnails.default.url}
         alt={video.snippet.title}

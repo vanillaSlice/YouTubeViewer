@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from '../../node_modules/prop-types';
+import PropTypes from 'prop-types';
 
 import VideoListItem from './VideoListItem';
 
@@ -7,7 +7,7 @@ import './VideoList.css';
 
 const VideoList = ({ videos, onVideoSelect }) =>
   (
-    <ul className="VideoList">
+    <ul className="video-list">
       {videos.map(video => (
         <VideoListItem
           key={video.etag}
