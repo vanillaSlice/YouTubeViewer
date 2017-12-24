@@ -5,7 +5,7 @@
 }
 
 .header .visible-sm {
-  display: initial !important;
+  display: inherit !important;
 }
 
 .header .hidden-sm {
