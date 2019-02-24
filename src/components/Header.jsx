@@ -39,7 +39,7 @@ class Header extends Component {
     const { displaySearchSmall, term } = this.state;
 
     return (
-      <header className="header">
+      <header className="Header">
         <div className="content">
           <h1 className={`brand visible-md ${displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}>
             <a href="." title="YouTube Viewer">

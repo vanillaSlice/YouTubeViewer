@@ -14,7 +14,7 @@ describe('VideoList', () => {
   const onVideoSelect = jest.fn();
   const videoList = shallow(<VideoList videos={videos} onVideoSelect={onVideoSelect} />);
 
-  test('renders video list items', () => {
+  it('renders video list items', () => {
     expect(videoList.find('VideoListItem').length).toBe(videos.length);
   });
 });
