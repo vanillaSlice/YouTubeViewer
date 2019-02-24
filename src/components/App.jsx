@@ -36,7 +36,7 @@ class App extends Component {
     const { selectedVideo, videos } = this.state;
 
     return (
-      <div className="app">
+      <div className="App">
         <Header onSearch={this.handleSearch} />
         <div className="container">
           {selectedVideo && <VideoDetails video={selectedVideo} />}

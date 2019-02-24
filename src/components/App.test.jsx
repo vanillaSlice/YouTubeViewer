@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 import App from './App';
 
 describe('App', () => {
-  test('renders without crashing', () => {
+  it('renders without crashing', () => {
     mount(<App />);
   });
 });
