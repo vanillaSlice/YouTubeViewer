@@ -19,23 +19,23 @@ describe('VideoListItem', () => {
   const videoListItem = shallow(<VideoListItem video={video} onVideoSelect={onVideoSelect} />);
   const image = videoListItem.find('img');
 
-  test('image renders src', () => {
+  it('image renders src', () => {
     expect(image.props().src).toBe(video.snippet.thumbnails.default.url);
   });
 
-  test('image renders alt', () => {
+  it('image renders alt', () => {
     expect(image.props().alt).toBe(video.snippet.title);
   });
 
-  test('renders title', () => {
+  it('renders title', () => {
     expect(videoListItem.find('.title').text()).toBe(video.snippet.title);
   });
 
-  test('renders channel', () => {
+  it('renders channel', () => {
     expect(videoListItem.find('.channel').text()).toBe(video.snippet.channelTitle);
   });
 
-  test('onVideoSelect function is passed video on click', () => {
+  it('onVideoSelect function is passed video on click', () => {
     videoListItem.simulate('click');
     expect(onVideoSelect).toHaveBeenCalledWith(video);
   });

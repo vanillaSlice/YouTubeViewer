@@ -1,29 +1,29 @@
-.video-list-item {
+.VideoListItem {
   align-items: center;
   cursor: pointer;
   display: flex;
   margin-top: 1rem;
 }
 
-.video-list-item:first-child {
+.VideoListItem:first-child {
   margin-top: 0;
 }
 
-.video-list-item img {
+.VideoListItem img {
   align-self: flex-start;
   margin-right: 0.5rem;
 }
 
-.video-list-item .video-info {
+.VideoListItem .info {
   align-self: flex-start;
 }
 
-.video-list-item .title {
+.VideoListItem .title {
   font-size: 0.875rem;
   margin: 0;
 }
 
-.video-list-item .channel {
+.VideoListItem .channel {
   color: #707070;
   font-size: 0.8125rem;
   margin: 0.5rem 0;
