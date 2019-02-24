@@ -1,4 +1,4 @@
-.video-list {
+.VideoList {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 62em) {
-  .video-list {
+  .VideoList {
     margin-left: 1.5rem;
     width: 33rem;
   }

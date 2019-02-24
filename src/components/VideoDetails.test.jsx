@@ -20,33 +20,33 @@ describe('VideoDetails', () => {
   const iframe = videoDetails.find('iframe');
   const channel = videoDetails.find('.channel');
 
-  test('iframe renders title', () => {
+  it('iframe renders title', () => {
     expect(iframe.props().title).toBe(video.snippet.title);
   });
 
-  test('iframe renders src', () => {
+  it('iframe renders src', () => {
     const expectedSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
     expect(iframe.props().src).toBe(expectedSrc);
   });
 
-  test('renders title', () => {
+  it('renders title', () => {
     expect(videoDetails.find('.title').text()).toBe(video.snippet.title);
   });
 
-  test('renders published date', () => {
+  it('renders published date', () => {
     expect(videoDetails.find('.published-date').text()).toBe('Published on\u00a0Jun 28, 2008');
   });
 
-  test('channel link renders title', () => {
+  it('channel link renders title', () => {
     expect(channel.text()).toBe(video.snippet.channelTitle);
   });
 
-  test('channel link renders href', () => {
+  it('channel link renders href', () => {
     const expectedHref = `https://www.youtube.com/channel/${video.snippet.channelId}`;
     expect(channel.props().href).toBe(expectedHref);
   });
 
-  test('renders description', () => {
+  it('renders description', () => {
     expect(videoDetails.find('.description').text()).toBe(video.snippet.description);
   });
 });

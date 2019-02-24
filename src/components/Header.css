@@ -1,18 +1,18 @@
-.header {
+.Header {
   background-color: #fff;
   box-shadow: 0 0.01rem 0.5rem #ddd;
   width: 100%;
 }
 
-.header .visible-sm {
+.Header .visible-sm {
   display: inherit !important;
 }
 
-.header .hidden-sm {
+.Header .hidden-sm {
   display: none !important;
 }
 
-.header .content {
+.Header .content {
   align-items: center;
   display: flex;
   height: 4rem;
@@ -21,64 +21,64 @@
   padding: 0 1rem;
 }
 
-.header .brand {
+.Header .brand {
   font-family: 'Raleway', sans-serif;
   font-size: 1.2rem;
   margin: 0;
   margin-right: 5rem;
 }
 
-.header .brand a {
+.Header .brand a {
   align-items: center;
   color: #282828;
   display: flex;
   text-decoration: none;
 }
 
-.header .logo {
+.Header .logo {
   color: #f00;
   font-size: 1.6rem;
   margin-right: 0.2rem;
 }
 
-.header button {
+.Header button {
   border: none;
   color: #828282;
   cursor: pointer;
   outline: none;
 }
 
-.header button:focus,
-.header button:hover {
+.Header button:focus,
+.Header button:hover {
   color: #333;
 }
 
-.header .icon-button {
+.Header .icon-button {
   background-color: transparent;
   font-size: 1.6rem;
   padding: 0;
 }
 
-.header .submit-button {
+.Header .submit-button {
   background-color: #f8f8f8;
   border-left: 0.0625rem solid #ddd;
   border-radius: 0;
   width: 4.6875rem;
 }
 
-.header .submit-button:focus,
-.header .submit-button:hover {
+.Header .submit-button:focus,
+.Header .submit-button:hover {
   background-color: #f0f0f0;
 }
 
-.header .search-form {
+.Header .search-form {
   border: 0.0625rem solid #ddd;
   border-radius: 0.125rem;
   display: flex;
   width: 100%;
 }
 
-.header .search-form input {
+.Header .search-form input {
   border: none;
   color: inherit;
   font-family: inherit;
@@ -87,25 +87,25 @@
   width: 100%;
 }
 
-.header .back-button {
+.Header .back-button {
   margin-right: 1rem;
 }
 
-.header .search-button {
+.Header .search-button {
   margin-left: auto;
 }
 
 @media (min-width: 62em) {
-  .header .visible-md {
+  .Header .visible-md {
     display: inherit !important;
   }
 
-  .header .hidden-md {
+  .Header .hidden-md {
     display: none !important;
   }
 
-  .header form,
-  .header input {
+  .Header form,
+  .Header input {
     max-width: 37.5rem;
     width: 37.5rem;
   }

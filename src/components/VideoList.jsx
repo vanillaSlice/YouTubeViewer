@@ -6,7 +6,7 @@ import VideoListItem from './VideoListItem';
 import './VideoList.css';
 
 const VideoList = ({ videos, onVideoSelect }) => (
-  <ul className="video-list">
+  <ul className="VideoList">
     {videos.map(video => (
       <VideoListItem
         key={video.etag}
