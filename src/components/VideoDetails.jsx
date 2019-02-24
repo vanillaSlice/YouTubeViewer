@@ -11,8 +11,10 @@ const DATE_OPTIONS = {
 
 const formatDate = str => new Date(str).toLocaleDateString('en-UK', DATE_OPTIONS);
 
-const VideoDetails = ({ video }) =>
-  (
+const VideoDetails = ({ video }) => {
+  const date = formatDate(video.snippet.publishedAt);
+
+  return (
     <div className="video-details">
       <div className="iframe-wrapper">
         <iframe
@@ -31,10 +33,14 @@ const VideoDetails = ({ video }) =>
       >
         {video.snippet.channelTitle}
       </a>
-      <p className="published-date">Published on {formatDate(video.snippet.publishedAt)}</p>
+      <p className="published-date">
+        Published on&nbsp;
+        {date}
+      </p>
       <p className="description">{video.snippet.description}</p>
     </div>
   );
+};
 
 VideoDetails.propTypes = {
   video: PropTypes.objectOf(PropTypes.any).isRequired,

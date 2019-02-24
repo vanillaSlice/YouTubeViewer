@@ -34,7 +34,7 @@ describe('VideoDetails', () => {
   });
 
   test('renders published date', () => {
-    expect(videoDetails.find('.published-date').text()).toBe('Published on Jun 28, 2008');
+    expect(videoDetails.find('.published-date').text()).toBe('Published on\u00a0Jun 28, 2008');
   });
 
   test('channel link renders title', () => {

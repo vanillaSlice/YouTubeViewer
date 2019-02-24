@@ -5,18 +5,17 @@ import VideoListItem from './VideoListItem';
 
 import './VideoList.css';
 
-const VideoList = ({ videos, onVideoSelect }) =>
-  (
-    <ul className="video-list">
-      {videos.map(video => (
-        <VideoListItem
-          key={video.etag}
-          video={video}
-          onVideoSelect={onVideoSelect}
-        />
-      ))}
-    </ul>
-  );
+const VideoList = ({ videos, onVideoSelect }) => (
+  <ul className="video-list">
+    {videos.map(video => (
+      <VideoListItem
+        key={video.etag}
+        video={video}
+        onVideoSelect={onVideoSelect}
+      />
+    ))}
+  </ul>
+);
 
 VideoList.propTypes = {
   videos: PropTypes.arrayOf(PropTypes.object).isRequired,

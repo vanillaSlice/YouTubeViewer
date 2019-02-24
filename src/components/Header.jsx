@@ -26,7 +26,9 @@ class Header extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.onSearch(this.state.term);
+    const { term } = this.state;
+    const { onSearch } = this.props;
+    onSearch(term);
   }
 
   handleTermChange(event) {
@@ -34,17 +36,19 @@ class Header extends Component {
   }
 
   render() {
+    const { displaySearchSmall, term } = this.state;
+
     return (
       <header className="header">
         <div className="content">
-          <h1 className={`brand visible-md ${this.state.displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}>
+          <h1 className={`brand visible-md ${displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}>
             <a href="." title="YouTube Viewer">
               <FontAwesome className="logo" name="youtube-play" tag="i" />
               YouTube Viewer
             </a>
           </h1>
           <button
-            className={`back-button icon-button hidden-md ${this.state.displaySearchSmall ? 'visible-sm' : 'hidden-sm'}`}
+            className={`back-button icon-button hidden-md ${displaySearchSmall ? 'visible-sm' : 'hidden-sm'}`}
             type="button"
             onClick={this.toggleDisplaySearchSmall}
           >
@@ -52,14 +56,14 @@ class Header extends Component {
             <span className="sr-only">Back</span>
           </button>
           <form
-            className={`search-form visible-md ${this.state.displaySearchSmall ? 'visible-sm' : 'hidden-sm'}`}
+            className={`search-form visible-md ${displaySearchSmall ? 'visible-sm' : 'hidden-sm'}`}
             onSubmit={this.handleSubmit}
           >
             <input
               type="search"
               placeholder="Search"
               autoComplete="off"
-              value={this.state.term}
+              value={term}
               onChange={this.handleTermChange}
             />
             <button
@@ -71,7 +75,7 @@ class Header extends Component {
             </button>
           </form>
           <button
-            className={`search-button icon-button hidden-md ${this.state.displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}
+            className={`search-button icon-button hidden-md ${displaySearchSmall ? 'hidden-sm' : 'visible-sm'}`}
             type="button"
             onClick={this.toggleDisplaySearchSmall}
           >

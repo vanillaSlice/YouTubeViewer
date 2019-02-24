@@ -33,12 +33,14 @@ class App extends Component {
   }
 
   render() {
+    const { selectedVideo, videos } = this.state;
+
     return (
       <div className="app">
         <Header onSearch={this.handleSearch} />
         <div className="container">
-          {this.state.selectedVideo && <VideoDetails video={this.state.selectedVideo} />}
-          <VideoList videos={this.state.videos} onVideoSelect={this.handleVideoSelect} />
+          {selectedVideo && <VideoDetails video={selectedVideo} />}
+          <VideoList videos={videos} onVideoSelect={this.handleVideoSelect} />
         </div>
       </div>
     );
