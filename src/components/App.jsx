@@ -7,8 +7,6 @@ import VideoList from './VideoList';
 
 import './App.css';
 
-const API_KEY = 'AIzaSyCR4f8TFNKbRvrauoT-TgvVMJhLCtkIqgo';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,7 +18,7 @@ class App extends Component {
   }
 
   handleSearch(term) {
-    YTSearch({ key: API_KEY, term }, (videos) => {
+    YTSearch({ key: process.env.REACT_APP_API_KEY, term }, (videos) => {
       this.setState({
         videos,
         selectedVideo: videos[0],
