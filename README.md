@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/vanillaSlice/YouTubeViewer.svg)](LICENSE)
 
 A simple YouTube viewer built using [React](https://reactjs.org/).
-A deployed version can be viewed [here](https://vanillaslice.github.io/YouTubeViewer/).
+A deployed version can be viewed [here](https://youtubeviewer.mikelowe.xyz/).
 
 ## Screenshot
 
