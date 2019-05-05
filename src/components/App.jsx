@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import YTSearch from 'youtube-api-search';
 
+import Footer from './Footer';
 import Header from './Header';
 import VideoDetails from './VideoDetails';
 import VideoList from './VideoList';
@@ -40,6 +41,7 @@ class App extends Component {
           {selectedVideo && <VideoDetails video={selectedVideo} />}
           <VideoList videos={videos} onVideoSelect={this.handleVideoSelect} />
         </div>
+        <Footer />
       </div>
     );
   }
