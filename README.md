@@ -18,6 +18,13 @@ A deployed version can be viewed [here](https://youtubeviewer.mikelowe.xyz/).
 
 * [npm](https://www.npmjs.com/)
 
+### YouTube API Key
+
+This app requires an API key for the YouTube Data API. Go
+[here](https://developers.google.com/youtube/v3/getting-started) to find out how to get one.
+Create a copy of the file `.env.local-example` and call it `.env.local`.
+Set the `REACT_APP_API_KEY` variable in this file to be your API key.
+
 ### Installing Dependencies
 
 From your terminal/command prompt run:
@@ -48,6 +55,7 @@ For those of you that are interested, the technology used in this project includ
 Resources useful for the completion of this project:
 
 * [Create React App](https://github.com/facebook/create-react-app) (React starter kit)
+* [YouTube Data API](https://developers.google.com/youtube/v3/getting-started)
 
 ## License
 
