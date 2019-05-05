@@ -5,11 +5,11 @@
 }
 
 .Footer .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .Footer .text-muted {
-  color: #6c757e !important;
+  color: #6c757e;
 }
 
 .Footer .small {
