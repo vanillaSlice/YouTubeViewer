@@ -1,7 +1,7 @@
 # YouTube Viewer
 
 [![Latest Release](https://img.shields.io/github/release/vanillaSlice/YouTubeViewer.svg)](https://github.com/vanillaSlice/YouTubeViewer/releases/latest)
-[![Build Status](https://img.shields.io/travis/vanillaSlice/YouTubeViewer/master.svg)](https://travis-ci.org/vanillaSlice/YouTubeViewer)
+[![Build Status](https://img.shields.io/travis/com/vanillaSlice/YouTubeViewer/master.svg)](https://travis-ci.com/vanillaSlice/YouTubeViewer)
 [![Coverage Status](https://img.shields.io/coveralls/github/vanillaSlice/YouTubeViewer/master.svg)](https://coveralls.io/github/vanillaSlice/YouTubeViewer?branch=master)
 [![License](https://img.shields.io/github/license/vanillaSlice/YouTubeViewer.svg)](LICENSE)
 
